@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="boostrap_css.css">
+    <title>T&S Travels</title>
+</head>
+<body>
+
+    <div class="p-5 bg-primary text-dark text-center">
+        <h1>T&S Travels</h1>
+        <p>Deals in Ticket Booking, Travel Guide</p>
+    </div>
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <div class="container-fluid">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#home"><button class="btn btn-dark">HOME</button></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about"><button class="btn btn-dark">ABOUT</button></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#services"><button class="btn btn-dark">SERVICS</button></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact"><button class="btn btn-dark">CONTACT US</button></a>
+                </li>
+                <li class="dropdown nav-item">
+            <div class="container-fluid">
+                    <button type="button" class="btn btn-dark dropdown-toggle nav-link" data-bs-toggle="dropdown">Journey Type</button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">One Way Travel</a></li>
+                        <li><a class="dropdown-item" href="#">Two Side Travel</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <br>
+    <div>
+        <section id="home"></section>
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            </div>
+
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="caursel1.jpg" alt="Los Angeles" class="d-block" style="width:100%">
+                </div>
+                <div class="carousel-item">
+                    <img src="caursel2.jpg" alt="Chicago" class="d-block" style="width:100%">
+                </div>
+            </div>
+
+            <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </div>
+
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-sm-4">
+                <section id="about"></section>
+                <h2>About Us</h2>
+            </div>
+            <div class="col-sm-8">
+                <p>At T&S travels, our mission is to revolutionize the way you plan and book your travels. We're dedicated to providing a seamless and convenient ticket booking platform, connecting you to a world of travel possibilities</p>
+                <br>
+                <p>Our dedicated team of travel enthusiasts, developers, designers, and customer support agents work tirelessly to ensure your experience with [Your Ticket Booking Website Name] is exceptional. Together, we are united by a common passion for travel and a commitment to improving the way you explore the world.</p>
+                <br>
+                <p>Embark on a journey with T&S travels where every trip is more than just a ticket. We believe in making your travel dreams a reality, ensuring your experiences are seamless and extraordinary. Our dedicated team is driven by the passion to redefine travel, placing you at the heart of every innovation. With a commitment to reliability, transparency, and exceptional service, we're here 24/7, ready to guide you on your travels. Join us in exploring the world, one adventure at a time, and let [Your Ticket Booking Website Name] be your trusted companion for all your travel endeavors</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+      <h2 class="mt-5">Book Tickets</h2>
+      <form>
+        <div class="form-group">
+          <label for="To">To:</label>
+          <select class="form-control" id="To">
+            <option value="">Select a city</option>
+            <option value="LHR">Lahore</option>
+            <option value="SWL">Sahiwal</option>
+            <option value="ISB">Islamabad</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="From">From:</label>
+          <select class="form-control" id="From">
+            <option value="">Select a city</option>
+            <option value="LHR">Lahore</option>
+            <option value="SWL">Sahiwal</option>
+            <option value="ISB">Islamabad</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="language">Time:</label>
+          <select class="form-control" id="language">
+            <option value="">Select Time</option>
+            <option value="en">7:00 PM</option>
+            <option value="fr">8:00 PM</option>
+            <option value="es">9:00 PM</option>
+          </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="container-fluid">
+                <section id="services"></section>
+                <h2 class=>Services</h2>
+            </div>
+            <div class="col-sm-6">
+                <img src="travel_guide.avif" class="img-fluid" width="800" height="600" data-bs-toggle="tooltip"
+                    title="TICKET BOOKING">
+            </div>
+            <div class="col-sm-6">
+                <img src="hotle_guide.avif" class="img-fluid" width="800" height="400" data-bs-toggle="tooltip"
+                    title="VISA ISSUING">
+        </div>
+
+        <div class="mt-5 p-4 bg-dark text-white text-center" width="100%">
+            <section id="contact"></section>
+            <div class="container-fluid">
+                <h2>T&S Travels</h2>
+                <h5>D-18 Islamabad</h5>
+                <p class="contactpara">PH. : +92-335-5440379</p>
+                <p class="contactpara">EMAIL: ts123@gmail.com</p>
+                <a href="https://maps.app.goo.gl/kwS9ERoNjaeCBV1BA"><button class="btn btn-dark">Locate Us</button></a>
+
+            </div>
+        </div>
+</body>
+
+</html>
